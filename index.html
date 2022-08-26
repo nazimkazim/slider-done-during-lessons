@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Slider</title>
+  </head>
+  <body>
+    <div class="container">
+      <button id="playBtn"></button>
+      <div class="slider">
+        <img src="./images/img1.jpg" alt="img1" />
+        <img src="./images/img2.jpg" alt="img2" />
+        <img src="./images/img3.jpg" alt="img3" />
+        <img src="./images/img4.jpg" alt="img4" />
+        <img src="./images/img5.jpg" alt="img5" />
+      </div>
+      <button id="prevBtn">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+      </button>
+      <button id="nextBtn">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </button>
+      <div class="rightBottomCorner"></div>
+      <div class="speedRange">
+        <input
+          type="range"
+          min="1"
+          max="3"
+          value="1"
+          id="myRange"
+        />
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
